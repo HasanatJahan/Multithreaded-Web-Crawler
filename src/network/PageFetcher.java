@@ -27,10 +27,7 @@ public class PageFetcher {
             }
             // Retrieving the string from the String buffer object
             String result = sb.toString();
-            // replace all the HTML tags
-            String htmlChars = "<[^>]*>";
-            result = result.replaceAll(htmlChars, "");
-            System.out.println("Contents of the web page: " + result);
+//            System.out.println("Contents of the web page: " + result);
             return result;
         }
         catch (Exception e) {
